@@ -1,0 +1,231 @@
+.timeline {
+  margin-top: 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  gap: 28px;
+  align-items: flex-start;
+}
+
+.timeline-connector {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.timeline-dot {
+  width: 16px; height: 16px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  z-index: 1;
+}
+
+.timeline-line {
+  width: 2px;
+  flex: 1;
+  min-height: 40px;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.1), transparent);
+  margin: 8px 0;
+}
+
+.timeline-card {
+  padding: 28px 32px;
+  margin-bottom: 28px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-top: 1px solid var(--accent, var(--accent1));
+}
+
+.timeline-card:hover {
+  transform: translateX(8px);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5), -4px 0 20px color-mix(in srgb, var(--accent) 25%, transparent);
+}
+
+.timeline-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.timeline-icon {
+  font-size: 1.5rem;
+}
+
+.timeline-altitude {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  color: var(--accent, var(--accent2));
+  margin-bottom: 2px;
+}
+
+.timeline-period {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--text-sub);
+}
+
+.timeline-degree {
+  font-family: var(--font-head);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+
+.timeline-institution {
+  font-size: 0.88rem;
+  color: var(--text-sub);
+  margin-bottom: 16px;
+}
+
+.timeline-score-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  background: rgba(255,255,255,0.03);
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.05);
+}
+
+.timeline-score-label {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  color: var(--text-sub);
+  text-transform: uppercase;
+}
+
+.timeline-score {
+  font-family: var(--font-head);
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+/* Certificate */
+.certificate-section {
+  margin-top: 80px;
+}
+
+.cert-card {
+  padding: 36px;
+  position: relative;
+  overflow: hidden;
+  cursor: default;
+}
+
+/* Holographic shimmer */
+.cert-shimmer {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    transparent 20%,
+    rgba(123,111,255,0.08) 35%,
+    rgba(0,212,255,0.08) 50%,
+    rgba(255,107,107,0.08) 65%,
+    transparent 80%
+  );
+  background-size: 200% 200%;
+  animation: gradientShift 4s ease infinite;
+  pointer-events: none;
+}
+
+.cert-card:hover .cert-shimmer {
+  animation: shimmer 2s linear infinite, gradientShift 2s ease infinite;
+}
+
+.cert-body {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  position: relative;
+  z-index: 1;
+}
+
+.cert-badge-icon {
+  flex-shrink: 0;
+  filter: drop-shadow(0 0 20px rgba(123,111,255,0.5));
+}
+
+.cert-info { flex: 1; }
+
+.cert-tag {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.25em;
+  color: var(--accent2);
+  background: rgba(0,212,255,0.08);
+  border: 1px solid rgba(0,212,255,0.2);
+  padding: 3px 10px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+.cert-title {
+  font-family: var(--font-head);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+
+.cert-issuer {
+  font-size: 0.88rem;
+  color: var(--text-sub);
+  margin-bottom: 16px;
+}
+
+.cert-id {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.cert-id-label {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.18em;
+  color: var(--text-sub);
+}
+
+.cert-id-value {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--accent1);
+}
+
+.cert-hologram {
+  width: 72px; height: 72px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #7B6FFF, #00D4FF, #FF6B6B, #7B6FFF);
+  background-size: 300% 300%;
+  animation: gradientShift 3s ease infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.hologram-inner {
+  font-family: var(--font-head);
+  font-weight: 800;
+  font-size: 1rem;
+  color: #fff;
+  text-shadow: 0 0 20px rgba(255,255,255,0.8);
+}
+
+@media (max-width: 600px) {
+  .cert-body { flex-direction: column; align-items: flex-start; }
+  .cert-hologram { display: none; }
+  .timeline-item { grid-template-columns: 32px 1fr; gap: 16px; }
+}

@@ -1,0 +1,92 @@
+.skills-legend {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--text-sub);
+}
+
+.legend-dot {
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  box-shadow: 0 0 8px currentColor;
+}
+
+.constellation-wrap {
+  padding: 32px;
+  position: relative;
+  margin-bottom: 48px;
+  overflow: hidden;
+}
+
+.constellation-svg {
+  width: 100%;
+  height: 500px;
+  display: block;
+}
+
+.constellation-hint {
+  position: absolute;
+  bottom: 16px;
+  right: 24px;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--text-sub);
+  opacity: 0.5;
+}
+
+/* Skill bars */
+.skill-bars-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.skill-bar-row {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.skill-bar-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skill-bar-name {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.skill-bar-pct {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--text-sub);
+}
+
+.skill-bar-track {
+  height: 4px;
+  background: rgba(255,255,255,0.06);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.skill-bar-fill {
+  height: 100%;
+  border-radius: 2px;
+  box-shadow: 0 0 8px currentColor;
+}
+
+@media (max-width: 600px) {
+  .constellation-svg { height: 300px; }
+  .skill-bars-grid { grid-template-columns: 1fr; }
+}
