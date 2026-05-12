@@ -7,7 +7,9 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Gallery from './components/Gallery';
 import Education from './components/Education';
+import Interests from './components/Interests';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 import './App.css';
 
 export default function App() {
@@ -23,8 +25,11 @@ export default function App() {
         <Projects />
         <Gallery />
         <Education />
+        <Interests />
         <Contact />
       </main>
+
+      <Footer />
     </div>
   );
 }

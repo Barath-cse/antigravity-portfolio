@@ -162,7 +162,7 @@ export default function Hero() {
               My Works
             </a>
             <a
-              href="https://drive.google.com/file/d/1example/view"
+              href="https://drive.google.com/file/d/1dnqdvtBTb9vg9Ie2RV6qRbiVdBUJSANz/view?usp=drive_link"
               target="_blank"
               rel="noreferrer"
               className="btn btn-outline"

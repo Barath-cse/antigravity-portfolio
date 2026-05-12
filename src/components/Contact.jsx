@@ -236,21 +236,6 @@ export default function Contact() {
         </motion.div>
       </div>
 
-      {/* Footer */}
-      <footer className="footer">
-        <div className="container">
-          <div className="footer-inner">
-            <p className="footer-copy">
-              © 2026 <span className="gradient-text">Manickavasagam S</span> — Engineered in zero gravity.
-            </p>
-            <div className="footer-links">
-              <a href="https://linkedin.com/in/manickavasagam-s-794174291" target="_blank" rel="noreferrer">LinkedIn</a>
-              <a href="https://bit.ly/3Reh7kT" target="_blank" rel="noreferrer">GitHub</a>
-              <a href="mailto:manickavasagam1359@gmail.com">Email</a>
-            </div>
-          </div>
-        </div>
-      </footer>
     </section>
   );
 }

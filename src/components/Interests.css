@@ -1,0 +1,125 @@
+.interests-section {
+  padding: 100px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.interests-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.interests-text {
+  max-width: 500px;
+}
+
+.section-title-alt.left {
+  text-align: left;
+  margin-bottom: 24px;
+}
+
+.interests-description {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--text-sub);
+  margin-bottom: 32px;
+}
+
+.interests-tag {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  color: #7B6FFF;
+  font-weight: 600;
+}
+
+.hobbies-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 24px;
+}
+
+.hobby-card {
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.hobby-card:hover {
+  border-color: rgba(123, 111, 255, 0.2);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+.hobby-icon-wrapper {
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  transition: transform 0.3s ease;
+}
+
+.hobby-card:hover .hobby-icon-wrapper {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.hobby-title {
+  font-family: var(--font-head);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 16px;
+}
+
+.hobby-line {
+  width: 30px;
+  height: 3px;
+  border-radius: 2px;
+  opacity: 0.3;
+}
+
+.hobby-card:hover .hobby-line {
+  width: 50px;
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 992px) {
+  .interests-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .interests-text {
+    max-width: 100%;
+    text-align: center;
+  }
+  
+  .section-title-alt.left {
+    text-align: center;
+  }
+  
+  .interests-tag {
+    justify-content: center;
+  }
+  
+  .hobbies-list {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hobbies-list {
+    grid-template-columns: 1fr;
+  }
+}

@@ -3,11 +3,13 @@ import { motion } from 'framer-motion';
 import './Navbar.css';
 
 const links = [
-  { label: 'About',    href: '#about' },
-  { label: 'Skills',   href: '#skills' },
-  { label: 'Projects', href: '#projects' },
-  { label: 'Gallery',  href: '#gallery' },
-  { label: 'Contact',  href: '#contact' },
+  { label: 'About',     href: '#about' },
+  { label: 'Skills',    href: '#skills' },
+  { label: 'Projects',  href: '#projects' },
+  { label: 'Gallery',   href: '#gallery' },
+  { label: 'Education', href: '#education' },
+  { label: 'Hobbies',   href: '#interests' },
+  { label: 'Contact',   href: '#contact' },
 ];
 
 export default function Navbar() {
