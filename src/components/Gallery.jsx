@@ -11,11 +11,8 @@ const photos = [
   { id: 6,  src: '/gallery/IMG_20250116_135055.jpg',       title: 'Daily Life',          category: 'Photography', size: 'small' },
   { id: 7,  src: '/gallery/IMG_20250505_183816.jpg',       title: 'Evening Glow',        category: 'Photography', size: 'medium' },
   { id: 8,  src: '/gallery/IMG_20260117_165131.jpeg',      title: 'Grand Perspective',   category: 'Photography', size: 'large' },
-  { id: 9,  src: '/gallery/New Project 34 [6FCA40D].png',  title: 'Digital Fusion',      category: 'Creative',    size: 'medium' },
-  { id: 10, src: '/gallery/Project 422 [24C1AD8].png',     title: 'Surreal Edit',        category: 'Editing',     size: 'small' },
-  { id: 11, src: '/gallery/Project 698 [F2A4969].png',     title: 'Conceptual Art',      category: 'Creative',    size: 'large' },
-  { id: 12, src: '/gallery/Project [77CF6E8].png',         title: 'Visual Synthesis',    category: 'Editing',     size: 'medium' },
-  { id: 13, src: '/gallery/IMG_20251120_195440.jpeg',     title: 'Golden Perspective',   category: 'Photography', size: 'medium' },
+  { id: 9,  src: '/gallery/IMG_20251120_195440.jpeg',     title: 'Golden Perspective',   category: 'Photography', size: 'medium' },
+
 ];
 
 const filters = ['All', 'Photography', 'Editing', 'Creative'];
