@@ -19,6 +19,7 @@ const skillNodes = [
   { id: 'photo',  label: 'Photography', group: 'creative', level: 92, x: 40, y: 88 },
   { id: 'edit',   label: 'Editing',     group: 'creative', level: 86, x: 65, y: 82 },
   { id: 'ui',     label: 'UI Design',   group: 'creative', level: 74, x: 50, y: 65 },
+
 ];
 
 // Star-map connections (pairs of node IDs)

@@ -14,9 +14,6 @@ export default function Footer() {
             <a href="https://linkedin.com/in/manickavasagam-s-794174291" target="_blank" rel="noreferrer" className="footer-link">
               LinkedIn
             </a>
-            <a href="https://bit.ly/3Reh7kT" target="_blank" rel="noreferrer" className="footer-link">
-              GitHub
-            </a>
             <a href="mailto:manickavasagam1359@gmail.com" className="footer-link">
               Email
             </a>

@@ -10,6 +10,7 @@ import Education from './components/Education';
 import Interests from './components/Interests';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Tools from './components/Tools';
 import './App.css';
 
 export default function App() {
@@ -22,6 +23,7 @@ export default function App() {
         <Hero />
         <About />
         <Skills />
+        <Tools />
         <Projects />
         <Gallery />
         <Education />
